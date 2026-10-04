@@ -14,7 +14,7 @@ export default function appSrc(express, bodyParser, createReadStream, crypto, ht
   });
 
   app.get('/code/', (req, res) => {
-    const offset = 8;
+    const offset = 7;
     let filePath = import.meta.url.substring(offset);
     if (/^\/[A-Za-z]:\//.test(filePath)) {
       filePath = filePath.substring(1);
